@@ -1,0 +1,105 @@
+﻿@{
+    ViewData["Title"] = "Privacy Policy";
+}
+<h1>@ViewData["Title"]</h1>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>用JS已经封装好的滑动门，只需调用就可以用_网页代码站(www.webdm.cn)</title>
+    <style type="text/css">
+       
+
+        .hidden1 {
+            display: none;
+        }
+
+      
+    </style>
+    <script type="text/javascript">
+        function scrollDoor() {
+        }
+        scrollDoor.prototype = {
+            sd: function (menus, divs, openClass, closeClass) {
+                var _this = this;
+                if (menus.length != divs.length) {
+                    alert("菜单层数量和内容层数量不一样!");
+                    return false;
+                }
+                for (var i = 0; i < menus.length; i++) {
+                    _this.$(menus[i]).value = i;
+                    _this.$(menus[i]).onmouseover = function () {
+
+                        for (var j = 0; j < menus.length; j++) {
+                            _this.$(menus[j]).className = closeClass;
+                            _this.$(divs[j]).style.display = "none";
+                        }
+                        _this.$(menus[this.value]).className = openClass;
+                        _this.$(divs[this.value]).style.display = "block";
+                    }
+                }
+            },
+            $: function (oid) {
+                if (typeof (oid) == "string")
+                    return document.getElementById(oid);
+                return oid;
+            }
+        }
+        window.onload = function () {
+            var SDmodel = new scrollDoor();
+            SDmodel.sd(["mm01", "mm02", "mm03", "mm04", "mm05"], ["cc01", "cc02", "cc03", "cc04", "cc05"], "sd01", "sd02");
+        }
+    </script>
+
+</head>
+<body>
+
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <nav class="navbar navbar-default" role="navigation">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand">资源分类</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="sd01" id="mm01">滑动门</li>
+                        <li class="sd02" id="mm02">滑动门</li>
+                        <li class="sd02" id="mm03">滑动门</li>
+                        <li class="sd02" id="mm04">滑动门</li>
+                        <li class="sd02" id="mm05">滑动门</li>
+                    </ul>
+
+                </div>
+            </nav>
+            <div class="jumbotron">
+                <div class="col-md-4 column">
+                    <ol><li></li></ol>
+                </div>
+                <div class="col-md-4 column" id="cc01">
+                    第一层内容
+                </div>
+                <div class="col-md-4 column hidden1" id="cc02">
+                    第二层内容
+                </div>
+                <div class="col-md-4 column hidden1" id="cc03">
+                    第三层内容
+                </div>
+                <div class="col-md-4 column hidden1" id="cc04">
+                    第四层内容
+                </div>
+                <div class="col-md-4 column hidden1" id="cc05">
+                    第五层内容
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<br>
+<p><a href="http://www.webdm.cn">网页代码站</a> - 最专业的代码下载网站 - 致力为中国站长提供有质量的代码！</p>

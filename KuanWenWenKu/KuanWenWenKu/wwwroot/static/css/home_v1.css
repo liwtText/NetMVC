@@ -1,0 +1,45 @@
+
+/* CSS Document */
+
+/*new home*/
+.blank15{height:15px; clear: both}
+.blank17{height:5px; clear: both}
+.n_main{width:1200px; height: auto; margin: 0 auto}
+.more a{color:#999;font-size:12px;font-family:"宋体"}
+.mapsm{font-family: "Arial"}
+.line{float:left; padding: 0 3px;color:#e6e6e6; font-size:16px} 
+.augg{width:1188px; height: 33px; border: 1px solid #e5e5e5; padding: 5px; margin: 0 auto; overflow: hidden; margin-bottom: 15px; font-size: 16px}
+.augg .aul{float:left; height:33px; line-height: 33px; padding: 0 80px 0 19px}
+.augg .aul b{color:#ff3a01; font-size:18px}
+.augg .aumore{float:left; background: url(../image/ggs.png) no-repeat 0 -7px; padding:0 30px 0 110px;width:650px}
+.augg .aumore li{float:left;font-size:12px;height:33px; line-height: 33px; padding: 0 12px}
+.augg .aumore li a{font-size:12px;float:left}
+.augg .aumore li span{float:left; padding: 0 5px;color:#999}
+#marquee{width:650px;height:50px;OVERFLOW: hidden; padding: 0; margin: 0}
+.augg .gmore{float:right;height:33px; line-height: 33px; padding: 0 15px}
+.augg .gmore a{color:#999;font-size:12px;font-family:"宋体"}
+ 
+.home_jrm{width:1200px; margin: auto} 
+.home_zx{width:1200px; margin: auto}
+.home_zx .zx_title{width:100%;height:50px; line-height: 60px; clear: both; overflow: hidden;color:#555}
+.home_zx .zx_title h3{float:left; font-size:18px; font-weight: 500}
+.home_zx .zx_title .zx_r{float:right}
+.home_zx .zx_view{width:1180px;border-top:1px solid #e4e4e4; background: #f7f7f7; padding:20px 10px; clear: both;height:493px}
+.home_zx .zx_view li{float:left; width:148px; height: 256px; padding:0 10px; text-align: center; overflow:hidden; position:relative; vertical-align:middle;display:table-cell}
+.home_zx .zx_view .links{padding:12px 0; display: block}
+.home_zx .zx_view li img{width:146px;height:206px; border: 1px solid #e5e5e5}
+.home_zx .zx_view li:hover img{border: 1px solid #ff3c00}
+.home_zx .zx_view li span{right: 14px;bottom: 52px; position: absolute;cursor: pointer;_bottom: 53px; _right: 15px;display:block; width:18px; height:17px; overflow:hidden}
+/*滑动效果*/
+.sd01{border-bottom: 1px solid #ff3c00; height:49px; color:#ff3c00; cursor:pointer;float:left}
+.sd02{cursor:pointer}
+.hidden{display: none}
+.hidden_v1{display: none}
+.blank{width:100%; clear: both}
+ 
+
+.banner_box{ height:393px; width:1200px; margin:0px auto;} 
+.banner{ width:840px; height:393px; float:left;}
+.nipic-main-aside{width:288px;border:1px solid #dcdfe2;background-color:#f6f6f8;z-index:3; height:370px;}
+.huitu-task-box{margin:0px 5px 0px -5px;overflow:hidden;width:273px}
+  

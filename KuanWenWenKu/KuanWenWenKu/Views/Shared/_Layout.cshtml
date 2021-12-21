@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - WebApplication1</title>
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <style>
+        .carousel-inner img {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container-fluid" style="z-index: 3; background-color: #fff; opacity: 0.95; position: fixed; ">
+            <div class="row">
+                @*<div class="col-sm-3"></div>*@
+                <div class="col-sm-2 offset-sm-3">
+                    <img src="static/picture/76fa53a0-7ce3-47d0-b08b-6dc762931b94.png" title="蚂蚁文库" alt="蚂蚁文库" style="border: 0;">
+                </div>
+                <div class="col-sm-4">
+                    <div class="input-group mb-3" style="margin-top:6%">
+                        <input type="text" class="form-control" placeholder="想找什么资料,在这里搜索" name="email">
+                        <span class="input-group-btn">
+                            <button class="input-group-text btn-info" type="button">
+                                Go!
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                @*<div class="col-sm-3"></div>*@
+            </div>
+        </div>
+
+        <div class="container" style="padding-top:7%">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">简介</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">信息</a>
+                </li>
+            </ul>
+
+            <div id="demo" class="carousel slide" data-ride="carousel">
+                <!-- 指示符 -->
+                <ul class="carousel-indicators">
+                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                    <li data-target="#demo" data-slide-to="1"></li>
+                    <li data-target="#demo" data-slide-to="2"></li>
+                </ul>
+                <!-- 轮播图片 -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://static.runoob.com/images/mix/img_fjords_wide.jpg">
+                        <div class="carousel-caption">
+                            <h3>第一张图片描述标题</h3>
+                            <p>描述文字!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.runoob.com/images/mix/img_nature_wide.jpg">
+                        <div class="carousel-caption">
+                            <h3>第二张图片描述标题</h3>
+                            <p>描述文字!</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://static.runoob.com/images/mix/img_mountains_wide.jpg">
+                        <div class="carousel-caption">
+                            <h3>第三张图片描述标题</h3>
+                            <p>描述文字!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 左右切换按钮 -->
+                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#demo" data-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </a>
+
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted" style=" position: relative;">
+        <div class="container">
+            &copy; 2021 - WebApplication1 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
+
+

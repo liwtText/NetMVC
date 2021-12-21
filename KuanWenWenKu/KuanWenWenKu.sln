@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30804.86
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KuanWenWenKu", "KuanWenWenKu\KuanWenWenKu.csproj", "{51CA538B-7907-4A72-B743-7F0E4D8923D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UploadFileWinForm", "UploadFileWinForm\UploadFileWinForm.csproj", "{81B0CCA9-67DD-47EA-8475-859E434B6C47}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51CA538B-7907-4A72-B743-7F0E4D8923D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51CA538B-7907-4A72-B743-7F0E4D8923D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51CA538B-7907-4A72-B743-7F0E4D8923D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51CA538B-7907-4A72-B743-7F0E4D8923D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81B0CCA9-67DD-47EA-8475-859E434B6C47}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81B0CCA9-67DD-47EA-8475-859E434B6C47}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81B0CCA9-67DD-47EA-8475-859E434B6C47}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81B0CCA9-67DD-47EA-8475-859E434B6C47}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D260A51-9153-402C-8912-33AC282B84E0}
+	EndGlobalSection
+EndGlobal
